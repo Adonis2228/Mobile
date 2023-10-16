@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" android:id="@+id/mn_main">
+        <item
+            android:id="@+id/hone"
+            android:title="Trang chủ"
+            android:icon="@drawable/baseline_home_24"
+            ></item>
+        <item
+            android:id="@+id/laptop"
+            android:title="Laptop"
+            android:icon="@drawable/baseline_laptop_24"
+            ></item>
+        <item
+            android:id="@+id/mobile"
+            android:title="Điện thoại"
+            android:icon="@drawable/baseline_phone_iphone_24"
+            ></item>
+        <item
+            android:id="@+id/contact"
+            android:title="Kho hàng"
+            android:icon="@drawable/baseline_storage_24"
+            ></item>
+        <item
+            android:id="@+id/map"
+            android:title="Địa chỉ"
+            android:icon="@drawable/baseline_map_24"
+            ></item>
+        <item
+            android:id="@+id/logout"
+            android:title="Đăng xuất"
+            android:icon="@drawable/baseline_login_24"
+            ></item>
+
+    </group>
+
+</menu>
