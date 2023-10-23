@@ -42,4 +42,14 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.android.volley:volley:1.2.0") //thuvienvolley
+    implementation ("com.squareup.picasso:picasso:2.71828")
+    implementation ("com.google.android.gms:play-services-maps:17.0.1")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("com.google.android.material:material:1.5.0-alpha02")
+    implementation ("com.google.android.gms:play-services-maps:17.0.1")
+    androidTestImplementation ("androidx.test.ext:junit:1.1.3")
+    androidTestImplementation ("androidx.test.espresso:espresso-core:3.4.0")
+    implementation ("com.google.maps.android:android-maps-utils:2.2.5")
+    implementation ("com.google.android.gms:play-services-maps:18.1.0")
+
 }

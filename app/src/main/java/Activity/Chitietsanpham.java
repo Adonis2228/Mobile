@@ -16,13 +16,13 @@ import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cuahangthietbionline.R;
+import com.example.quanlycuahang.R;
 import com.squareup.picasso.Picasso;
 
 import java.text.DecimalFormat;
 
 import model.GioHang;
-import model.Sanpham;
+import model.SanPham;
 
 public class Chitietsanpham extends AppCompatActivity {
     ImageView imgchitietsp;
@@ -50,7 +50,7 @@ public class Chitietsanpham extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menugiohang, menu);
+        getMenuInflater().inflate(R.menu.menu_giohang, menu);
         return true;
     }
 
@@ -105,7 +105,7 @@ public class Chitietsanpham extends AppCompatActivity {
     }
 
     private void GetInformation() {
-        Sanpham sanpham = (Sanpham) getIntent().getSerializableExtra("thongtinsanpham");
+        SanPham sanpham = (SanPham) getIntent().getSerializableExtra("thongtinsanpham");
         Id = sanpham.getID();
         Tenchitiet = sanpham.getTensanpham();
         Giachitiet = sanpham.getGiasanpham();

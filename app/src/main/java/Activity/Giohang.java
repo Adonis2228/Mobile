@@ -14,7 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cuahangthietbionline.R;
+import com.example.quanlycuahang.R;
 
 import java.text.DecimalFormat;
 

@@ -6,8 +6,8 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.cuahangthietbionline.R;
-import com.example.cuahangthietbionline.databinding.ActivityThongtinBinding;
+import com.example.quanlycuahang.R;
+import com.example.quanlycuahang.databinding.ActivityThongtinBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

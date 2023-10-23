@@ -25,7 +25,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.cuahangthietbionline.R;
+import com.example.quanlycuahang.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,7 +36,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import adapter.LaptopAdapter;
-import model.Sanpham;
+import model.SanPham;
 import until.Checkconnection;
 import until.Server;
 
@@ -44,7 +44,7 @@ public class LaptopActivity extends AppCompatActivity {
     Toolbar toolbar;
     ListView listViewlaptop;
     LaptopAdapter laptopAdapter;
-    ArrayList<Sanpham> sanphamArrayList;
+    ArrayList<SanPham> sanphamArrayList;
     int idlaptop = 0;
     int page = 1;
     View footerview;
@@ -67,7 +67,7 @@ public class LaptopActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menugiohang, menu);
+        getMenuInflater().inflate(R.menu.menu_giohang, menu);
         return true;
     }
 
@@ -109,7 +109,7 @@ public class LaptopActivity extends AppCompatActivity {
 
     private void Getdata(int Page) {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        String duongdan = Server.Đuongandienthoai + String.valueOf(page);
+        String duongdan = Server.Duongdandienthoai + String.valueOf(page);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, duongdan, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -131,7 +131,7 @@ public class LaptopActivity extends AppCompatActivity {
                             Hinhanhlaptop = jsonObject.getString("hinhanhsp");
                             Motalatop = jsonObject.getString("motasp");
                             Idsplatop = jsonObject.getInt("idsanpham");
-                            sanphamArrayList.add(new Sanpham(id, Tenlaptop, Gialatop, Hinhanhlaptop, Motalatop, Idsplatop
+                            sanphamArrayList.add(new SanPham(id, Tenlaptop, Gialatop, Hinhanhlaptop, Motalatop, Idsplatop
                             ));
                             laptopAdapter.notifyDataSetChanged();
                         }

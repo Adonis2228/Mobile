@@ -16,16 +16,23 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.quanlycuahang.R;
+//import com.google.android.gms.common.api.Response;
+import com.android.volley.Response;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import model.User;
+import until.Server;
 
 public class LoginActivity extends AppCompatActivity {
     private Button mBtnLogin;
